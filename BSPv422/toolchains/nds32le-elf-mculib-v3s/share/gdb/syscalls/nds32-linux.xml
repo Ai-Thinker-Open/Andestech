@@ -1,0 +1,372 @@
+<?xml version="1.0"?>
+<!DOCTYPE syscalls_info SYSTEM "gdb-syscalls.dtd">
+<!-- Copyright (C) 2016-2017 Free Software Foundation, Inc.
+
+     Copying and distribution of this file, with or without modification,
+     are permitted in any medium without royalty provided the copyright
+     notice and this notice are preserved.  This file is offered as-is,
+     without any warranty. -->
+<!-- This file was generated using the following file:
+
+     /usr/src/linux/arch/nds32/include/asm/unistd.h
+
+     The file mentioned above belongs to the Linux Kernel.
+     Some small hand-edits were made. -->
+<syscalls_info>
+  <syscall name="restart_syscall" number="20480"/>
+  <syscall name="exit" number="20481" groups="process"/>
+  <syscall name="fork" number="20482" groups="process"/>
+  <syscall name="read" number="20483" groups="descriptor"/>
+  <syscall name="write" number="20484" groups="descriptor"/>
+  <syscall name="open" number="20485" groups="descriptor,file"/>
+  <syscall name="close" number="20486" groups="descriptor"/>
+  <syscall name="waitpid" number="20487" groups="process"/>
+  <syscall name="creat" number="20488" groups="descriptor,file"/>
+  <syscall name="link" number="20489" groups="file"/>
+  <syscall name="unlink" number="20490" groups="file"/>
+  <syscall name="execve" number="20491" groups="file,process"/>
+  <syscall name="chdir" number="20492" groups="file"/>
+  <syscall name="time" number="20493"/>
+  <syscall name="mknod" number="20494" groups="file"/>
+  <syscall name="chmod" number="20495" groups="file"/>
+  <syscall name="lchown" number="20496" groups="file"/>
+  <syscall name="lseek" number="20499" groups="descriptor"/>
+  <syscall name="getpid" number="20500"/>
+  <syscall name="mount" number="20501" groups="file"/>
+  <syscall name="umount" number="20502" groups="file"/>
+  <syscall name="setuid" number="20503"/>
+  <syscall name="getuid" number="20504"/>
+  <syscall name="stime" number="20505"/>
+  <syscall name="ptrace" number="20506"/>
+  <syscall name="alarm" number="20507"/>
+  <syscall name="pause" number="20509" groups="signal"/>
+  <syscall name="utime" number="20510" groups="file"/>
+  <syscall name="access" number="20513" groups="file"/>
+  <syscall name="nice" number="20514"/>
+  <syscall name="sync" number="20516"/>
+  <syscall name="kill" number="20517" groups="signal"/>
+  <syscall name="rename" number="20518" groups="file"/>
+  <syscall name="mkdir" number="20519" groups="file"/>
+  <syscall name="rmdir" number="20520" groups="file"/>
+  <syscall name="dup" number="20521" groups="descriptor"/>
+  <syscall name="pipe" number="20522" groups="descriptor"/>
+  <syscall name="times" number="20523"/>
+  <syscall name="brk" number="20525" groups="memory"/>
+  <syscall name="setgid" number="20526"/>
+  <syscall name="getgid" number="20527"/>
+  <syscall name="geteuid" number="20529"/>
+  <syscall name="getegid" number="20530"/>
+  <syscall name="acct" number="20531" groups="file"/>
+  <syscall name="umount2" number="20532" groups="file"/>
+  <syscall name="ioctl" number="20534" groups="descriptor"/>
+  <syscall name="fcntl" number="20535" groups="descriptor"/>
+  <syscall name="setpgid" number="20537"/>
+  <syscall name="cacheflush" number="20539"/>
+  <syscall name="umask" number="20540"/>
+  <syscall name="chroot" number="20541" groups="file"/>
+  <syscall name="ustat" number="20542"/>
+  <syscall name="dup2" number="20543" groups="descriptor"/>
+  <syscall name="getppid" number="20544"/>
+  <syscall name="getpgrp" number="20545"/>
+  <syscall name="setsid" number="20546"/>
+  <syscall name="sigaction" number="20547" groups="signal"/>
+  <syscall name="setreuid" number="20550"/>
+  <syscall name="setregid" number="20551"/>
+  <syscall name="sigsuspend" number="20552" groups="signal"/>
+  <syscall name="sigpending" number="20553" groups="signal"/>
+  <syscall name="sethostname" number="20554"/>
+  <syscall name="setrlimit" number="20555"/>
+  <syscall name="getrlimit" number="20556"/>
+  <syscall name="getrusage" number="20557"/>
+  <syscall name="gettimeofday" number="20558"/>
+  <syscall name="settimeofday" number="20559"/>
+  <syscall name="getgroups" number="20560"/>
+  <syscall name="setgroups" number="20561"/>
+  <syscall name="select" number="20562" groups="descriptor"/>
+  <syscall name="symlink" number="20563" groups="file"/>
+  <syscall name="readlink" number="20565" groups="file"/>
+  <syscall name="uselib" number="20566" groups="file"/>
+  <syscall name="swapon" number="20567" groups="file"/>
+  <syscall name="reboot" number="20568"/>
+  <syscall name="readdir" number="20569" groups="descriptor"/>
+  <syscall name="mmap" number="20570" groups="descriptor,memory"/>
+  <syscall name="munmap" number="20571" groups="memory"/>
+  <syscall name="truncate" number="20572" groups="file"/>
+  <syscall name="ftruncate" number="20573" groups="descriptor"/>
+  <syscall name="fchmod" number="20574" groups="descriptor"/>
+  <syscall name="fchown" number="20575" groups="descriptor"/>
+  <syscall name="getpriority" number="20576"/>
+  <syscall name="setpriority" number="20577"/>
+  <syscall name="statfs" number="20579" groups="file"/>
+  <syscall name="fstatfs" number="20580" groups="descriptor"/>
+  <syscall name="socketcall" number="20582" groups="descriptor"/>
+  <syscall name="syslog" number="20583"/>
+  <syscall name="setitimer" number="20584"/>
+  <syscall name="getitimer" number="20585"/>
+  <syscall name="stat" number="20586" groups="file"/>
+  <syscall name="lstat" number="20587" groups="file"/>
+  <syscall name="fstat" number="20588" groups="descriptor"/>
+  <syscall name="vhangup" number="20591"/>
+  <syscall name="syscall" number="20593"/>
+  <syscall name="wait4" number="20594" groups="process"/>
+  <syscall name="swapoff" number="20595" groups="file"/>
+  <syscall name="sysinfo" number="20596"/>
+  <syscall name="ipc" number="20597" groups="ipc"/>
+  <syscall name="fsync" number="20598" groups="descriptor"/>
+  <syscall name="sigreturn" number="20599" groups="signal"/>
+  <syscall name="clone" number="20600" groups="process"/>
+  <syscall name="setdomainname" number="20601"/>
+  <syscall name="uname" number="20602"/>
+  <syscall name="adjtimex" number="20604"/>
+  <syscall name="mprotect" number="20605" groups="memory"/>
+  <syscall name="sigprocmask" number="20606" groups="signal"/>
+  <syscall name="init_module" number="20608"/>
+  <syscall name="delete_module" number="20609"/>
+  <syscall name="quotactl" number="20611" groups="file"/>
+  <syscall name="getpgid" number="20612"/>
+  <syscall name="fchdir" number="20613" groups="descriptor"/>
+  <syscall name="bdflush" number="20614"/>
+  <syscall name="sysfs" number="20615"/>
+  <syscall name="personality" number="20616"/>
+  <syscall name="setfsuid" number="20618"/>
+  <syscall name="setfsgid" number="20619"/>
+  <syscall name="_llseek" number="20620" groups="descriptor"/>
+  <syscall name="getdents" number="20621" groups="descriptor"/>
+  <syscall name="_newselect" number="20622" groups="descriptor"/>
+  <syscall name="flock" number="20623" groups="descriptor"/>
+  <syscall name="msync" number="20624" groups="memory"/>
+  <syscall name="readv" number="20625" groups="descriptor"/>
+  <syscall name="writev" number="20626" groups="descriptor"/>
+  <syscall name="getsid" number="20627"/>
+  <syscall name="fdatasync" number="20628" groups="descriptor"/>
+  <syscall name="_sysctl" number="20629"/>
+  <syscall name="mlock" number="20630" groups="memory"/>
+  <syscall name="munlock" number="20631" groups="memory"/>
+  <syscall name="mlockall" number="20632" groups="memory"/>
+  <syscall name="munlockall" number="20633" groups="memory"/>
+  <syscall name="sched_setparam" number="20634"/>
+  <syscall name="sched_getparam" number="20635"/>
+  <syscall name="sched_setscheduler" number="20636"/>
+  <syscall name="sched_getscheduler" number="20637"/>
+  <syscall name="sched_yield" number="20638"/>
+  <syscall name="sched_get_priority_max" number="20639"/>
+  <syscall name="sched_get_priority_min" number="20640"/>
+  <syscall name="sched_rr_get_interval" number="20641"/>
+  <syscall name="nanosleep" number="20642"/>
+  <syscall name="mremap" number="20643" groups="memory"/>
+  <syscall name="setresuid" number="20644"/>
+  <syscall name="getresuid" number="20645"/>
+  <syscall name="getpagesize" number="20646"/>
+  <syscall name="poll" number="20648" groups="descriptor"/>
+  <syscall name="nfsservctl" number="20649"/>
+  <syscall name="setresgid" number="20650"/>
+  <syscall name="getresgid" number="20651"/>
+  <syscall name="prctl" number="20652"/>
+  <syscall name="rt_sigreturn" number="20653" groups="signal"/>
+  <syscall name="rt_sigaction" number="20654" groups="signal"/>
+  <syscall name="rt_sigprocmask" number="20655" groups="signal"/>
+  <syscall name="rt_sigpending" number="20656" groups="signal"/>
+  <syscall name="rt_sigtimedwait" number="20657" groups="signal"/>
+  <syscall name="rt_sigqueueinfo" number="20658" groups="signal"/>
+  <syscall name="rt_sigsuspend" number="20659" groups="signal"/>
+  <syscall name="pread64" number="20660" groups="descriptor"/>
+  <syscall name="pwrite64" number="20661" groups="descriptor"/>
+  <syscall name="chown" number="20662" groups="file"/>
+  <syscall name="getcwd" number="20663" groups="file"/>
+  <syscall name="capget" number="20664"/>
+  <syscall name="capset" number="20665"/>
+  <syscall name="sigaltstack" number="20666" groups="signal"/>
+  <syscall name="sendfile" number="20667" groups="descriptor,network"/>
+  <syscall name="vfork" number="20670" groups="process"/>
+  <syscall name="ugetrlimit" number="20671"/>
+  <syscall name="mmap2" number="20672" groups="descriptor,memory"/>
+  <syscall name="truncate64" number="20673" groups="file"/>
+  <syscall name="ftruncate64" number="20674" groups="descriptor"/>
+  <syscall name="stat64" number="20675" groups="file"/>
+  <syscall name="lstat64" number="20676" groups="file"/>
+  <syscall name="fstat64" number="20677" groups="descriptor"/>
+  <syscall name="lchown32" number="20678" groups="file"/>
+  <syscall name="getuid32" number="20679"/>
+  <syscall name="getgid32" number="20680"/>
+  <syscall name="geteuid32" number="20681"/>
+  <syscall name="getegid32" number="20682"/>
+  <syscall name="setreuid32" number="20683"/>
+  <syscall name="setregid32" number="20684"/>
+  <syscall name="getgroups32" number="20685"/>
+  <syscall name="setgroups32" number="20686"/>
+  <syscall name="fchown32" number="20687" groups="descriptor"/>
+  <syscall name="setresuid32" number="20688"/>
+  <syscall name="getresuid32" number="20689"/>
+  <syscall name="setresgid32" number="20690"/>
+  <syscall name="getresgid32" number="20691"/>
+  <syscall name="chown32" number="20692" groups="file"/>
+  <syscall name="setuid32" number="20693"/>
+  <syscall name="setgid32" number="20694"/>
+  <syscall name="setfsuid32" number="20695"/>
+  <syscall name="setfsgid32" number="20696"/>
+  <syscall name="getdents64" number="20697" groups="descriptor"/>
+  <syscall name="pivot_root" number="20698" groups="file"/>
+  <syscall name="mincore" number="20699" groups="memory"/>
+  <syscall name="madvise" number="20700" groups="memory"/>
+  <syscall name="fcntl64" number="20701" groups="descriptor"/>
+  <syscall name="gettid" number="20704"/>
+  <syscall name="readahead" number="20705" groups="descriptor"/>
+  <syscall name="setxattr" number="20706" groups="file"/>
+  <syscall name="lsetxattr" number="20707" groups="file"/>
+  <syscall name="fsetxattr" number="20708" groups="descriptor"/>
+  <syscall name="getxattr" number="20709" groups="file"/>
+  <syscall name="lgetxattr" number="20710" groups="file"/>
+  <syscall name="fgetxattr" number="20711" groups="descriptor"/>
+  <syscall name="listxattr" number="20712" groups="file"/>
+  <syscall name="llistxattr" number="20713" groups="file"/>
+  <syscall name="flistxattr" number="20714" groups="descriptor"/>
+  <syscall name="removexattr" number="20715" groups="file"/>
+  <syscall name="lremovexattr" number="20716" groups="file"/>
+  <syscall name="fremovexattr" number="20717" groups="descriptor"/>
+  <syscall name="tkill" number="20718" groups="signal"/>
+  <syscall name="sendfile64" number="20719" groups="descriptor,network"/>
+  <syscall name="futex" number="20720"/>
+  <syscall name="sched_setaffinity" number="20721"/>
+  <syscall name="sched_getaffinity" number="20722"/>
+  <syscall name="io_setup" number="20723"/>
+  <syscall name="io_destroy" number="20724"/>
+  <syscall name="io_getevents" number="20725"/>
+  <syscall name="io_submit" number="20726"/>
+  <syscall name="io_cancel" number="20727"/>
+  <syscall name="exit_group" number="20728" groups="process"/>
+  <syscall name="lookup_dcookie" number="20729"/>
+  <syscall name="epoll_create" number="20730" groups="descriptor"/>
+  <syscall name="epoll_ctl" number="20731" groups="descriptor"/>
+  <syscall name="epoll_wait" number="20732" groups="descriptor"/>
+  <syscall name="remap_file_pages" number="20733" groups="memory"/>
+  <syscall name="set_tid_address" number="20736"/>
+  <syscall name="timer_create" number="20737"/>
+  <syscall name="timer_settime" number="20738"/>
+  <syscall name="timer_gettime" number="20739"/>
+  <syscall name="timer_getoverrun" number="20740"/>
+  <syscall name="timer_delete" number="20741"/>
+  <syscall name="clock_settime" number="20742"/>
+  <syscall name="clock_gettime" number="20743"/>
+  <syscall name="clock_getres" number="20744"/>
+  <syscall name="clock_nanosleep" number="20745"/>
+  <syscall name="statfs64" number="20746" groups="file"/>
+  <syscall name="fstatfs64" number="20747" groups="descriptor"/>
+  <syscall name="tgkill" number="20748" groups="signal"/>
+  <syscall name="utimes" number="20749" groups="file"/>
+  <syscall name="fadvise64_64" number="20750" groups="descriptor"/>
+  <syscall name="pciconfig_iobase" number="20751"/>
+  <syscall name="pciconfig_read" number="20752"/>
+  <syscall name="pciconfig_write" number="20753"/>
+  <syscall name="mq_open" number="20754"/>
+  <syscall name="mq_unlink" number="20755"/>
+  <syscall name="mq_timedsend" number="20756"/>
+  <syscall name="mq_timedreceive" number="20757"/>
+  <syscall name="mq_notify" number="20758"/>
+  <syscall name="mq_getsetattr" number="20759"/>
+  <syscall name="waitid" number="20760" groups="process"/>
+  <syscall name="add_key" number="20761"/>
+  <syscall name="request_key" number="20762"/>
+  <syscall name="keyctl" number="20763"/>
+  <syscall name="ioprio_set" number="20764"/>
+  <syscall name="ioprio_get" number="20765"/>
+  <syscall name="inotify_init" number="20766" groups="descriptor"/>
+  <syscall name="inotify_add_watch" number="20767" groups="descriptor"/>
+  <syscall name="inotify_rm_watch" number="20768" groups="descriptor"/>
+  <syscall name="migrate_pages" number="20769" groups="memory"/>
+  <syscall name="openat" number="20770" groups="descriptor,file"/>
+  <syscall name="mkdirat" number="20771" groups="descriptor,file"/>
+  <syscall name="mknodat" number="20772" groups="descriptor,file"/>
+  <syscall name="fchownat" number="20773" groups="descriptor,file"/>
+  <syscall name="futimesat" number="20774" groups="descriptor,file"/>
+  <syscall name="fstatat64" number="20775" groups="descriptor,file"/>
+  <syscall name="unlinkat" number="20776" groups="descriptor,file"/>
+  <syscall name="renameat" number="20777" groups="descriptor,file"/>
+  <syscall name="linkat" number="20778" groups="descriptor,file"/>
+  <syscall name="symlinkat" number="20779" groups="descriptor,file"/>
+  <syscall name="readlinkat" number="20780" groups="descriptor,file"/>
+  <syscall name="fchmodat" number="20781" groups="descriptor,file"/>
+  <syscall name="faccessat" number="20782" groups="descriptor,file"/>
+  <syscall name="pselect6" number="20783" groups="descriptor"/>
+  <syscall name="ppoll" number="20784" groups="descriptor"/>
+  <syscall name="unshare" number="20785" groups="process"/>
+  <syscall name="set_robust_list" number="20786"/>
+  <syscall name="get_robust_list" number="20787"/>
+  <syscall name="splice" number="20788" groups="descriptor"/>
+  <syscall name="sync_file_range2" number="20789"/>
+  <syscall name="tee" number="20790" groups="descriptor"/>
+  <syscall name="vmsplice" number="20791" groups="descriptor"/>
+  <syscall name="move_pages" number="20792" groups="memory"/>
+  <syscall name="fadvise64" number="20793" groups="descriptor"/>
+  <syscall name="utimensat" number="20794" groups="descriptor,file"/>
+  <syscall name="signalfd" number="20795" groups="descriptor,signal"/>
+  <syscall name="timerfd_create" number="20796" groups="descriptor"/>
+  <syscall name="eventfd" number="20797" groups="descriptor"/>
+  <syscall name="fallocate" number="20798" groups="descriptor"/>
+  <syscall name="timerfd_settime" number="20799" groups="descriptor"/>
+  <syscall name="timerfd_gettime" number="20800" groups="descriptor"/>
+  <syscall name="getcpu" number="20801"/>
+  <syscall name="signalfd4" number="20802" groups="descriptor,signal"/>
+  <syscall name="eventfd2" number="20803" groups="descriptor"/>
+  <syscall name="epoll_create1" number="20804" groups="descriptor"/>
+  <syscall name="dup3" number="20805" groups="descriptor"/>
+  <syscall name="pipe2" number="20806" groups="descriptor"/>
+  <syscall name="inotify_init1" number="20807" groups="descriptor"/>
+  <syscall name="kexec_load" number="20808"/>
+  <syscall name="accept" number="20809" groups="network"/>
+  <syscall name="bind" number="20810" groups="network"/>
+  <syscall name="connect" number="20811" groups="network"/>
+  <syscall name="getpeername" number="20812" groups="network"/>
+  <syscall name="getsockname" number="20813" groups="network"/>
+  <syscall name="getsockopt" number="20814" groups="network"/>
+  <syscall name="listen" number="20815" groups="network"/>
+  <syscall name="recv" number="20816" groups="network"/>
+  <syscall name="recvfrom" number="20817" groups="network"/>
+  <syscall name="recvmsg" number="20818" groups="network"/>
+  <syscall name="send" number="20819" groups="network"/>
+  <syscall name="sendmsg" number="20820" groups="network"/>
+  <syscall name="sendto" number="20821" groups="network"/>
+  <syscall name="setsockopt" number="20822" groups="network"/>
+  <syscall name="shutdown" number="20823" groups="network"/>
+  <syscall name="socket" number="20824" groups="network"/>
+  <syscall name="socketpair" number="20825" groups="network"/>
+  <syscall name="prlimit64" number="20826"/>
+  <syscall name="accept4" number="20827" groups="network"/>
+  <syscall name="recvmmsg" number="20828" groups="network"/>
+  <syscall name="sendmmsg" number="20829" groups="network"/>
+  <syscall name="fanotify_init" number="20830" groups="descriptor"/>
+  <syscall name="fanotify_mark" number="20831" groups="descriptor,file"/>
+  <syscall name="msgget" number="20832" groups="ipc"/>
+  <syscall name="msgctl" number="20833" groups="ipc"/>
+  <syscall name="msgrcv" number="20834" groups="ipc"/>
+  <syscall name="msgsnd" number="20835" groups="ipc"/>
+  <syscall name="semget" number="20836" groups="ipc"/>
+  <syscall name="semctl" number="20837" groups="ipc"/>
+  <syscall name="semtimedop" number="20838" groups="ipc"/>
+  <syscall name="semop" number="20839" groups="ipc"/>
+  <syscall name="shmget" number="20840" groups="ipc"/>
+  <syscall name="shmctl" number="20841" groups="ipc"/>
+  <syscall name="shmat" number="20842" groups="ipc,memory"/>
+  <syscall name="shmdt" number="20843" groups="ipc,memory"/>
+  <syscall name="syncfs" number="20844" groups="descriptor"/>
+  <syscall name="setns" number="20845" groups="descriptor"/>
+  <syscall name="name_to_handle_at" number="20846" groups="descriptor,file"/>
+  <syscall name="open_by_handle_at" number="20847" groups="descriptor"/>
+  <syscall name="process_vm_readv" number="20848"/>
+  <syscall name="process_vm_writev" number="20849"/>
+  <syscall name="clock_adjtime" number="20850"/>
+  <syscall name="get_mempolicy" number="20851" groups="memory"/>
+  <syscall name="mbind" number="20852" groups="memory"/>
+  <syscall name="perf_event_open" number="20853" groups="descriptor"/>
+  <syscall name="preadv" number="20854" groups="descriptor"/>
+  <syscall name="pwritev" number="20855" groups="descriptor"/>
+  <syscall name="rt_tgsigqueueinfo" number="20856" groups="process,signal"/>
+  <syscall name="set_mempolicy" number="20857" groups="memory"/>
+  <syscall name="epoll_pwait" number="20858" groups="descriptor"/>
+  <syscall name="NDS32_lmmap" number="28673"/>
+  <syscall name="NDS32_lmunmap" number="28674"/>
+  <syscall name="NDS32_lmdma" number="28675"/>
+  <syscall name="NDS32_pfmctl" number="28676"/>
+  <syscall name="NDS32_getpfm" number="28677"/>
+  <syscall name="NDS32_setpfm" number="28678"/>
+  <syscall name="NDS32_wbna" number="28679"/>
+</syscalls_info>
